@@ -16,5 +16,21 @@ public class Work5 {
         //persArray[4] = new Person(...);
         //
         //5. С помощью цикла вывести информацию только о сотрудниках старше 40 лет.
+
+        OOP();
+    }
+    static void OOP () {
+
+        Employee[] emplArray = new Employee[5];
+        emplArray[0] = new Employee("Ivanov Ivan", "Engineer", "ivivan@mailbox.com", 892312312, 30000, 30);
+        emplArray[1] = new Employee("Masha Mashova", "Bugalter", "Masha@lol.com",890236446, 5000, 50);
+        emplArray[2] = new Employee("Larisa Abramova", "Bugalter", "Latisa@lol.com",890236336, 4500, 32);
+        emplArray[3] = new Employee("Boris Lohov", "IT", "Lohov00ass@lol.com",890451446, 3000, 23);
+        emplArray[4] = new Employee("Masha Popova", "Director", "Director@lol.com",890236466, 7500, 42);
+            for (int i = 0; i < emplArray.length; i++) {
+                if (emplArray[i].getВозраст()<40) {
+                    emplArray[i].info();
+                }
+        }
     }
 }
